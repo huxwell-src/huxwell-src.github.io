@@ -1,0 +1,106 @@
+:root{
+    --mobile: 375px;
+    --desktop: 1440px;
+    --Soft-blue: #8bacda;
+    --Cyan: #00fff7;
+    --Very-dark-blue-main: #0d192b;
+    --Very-dark-blue-card: #14253d;
+    --Very-dark-blue-line: #2e4463;
+    --White: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Very-dark-blue-main); 
+    position: relative;  
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    height: 600px;
+    width: 350px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 15px;
+    box-shadow: 0px 25px 0px 15px rgba(0,0,0,.1);
+    .imagen{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 300px;
+            border-radius: 15px; 
+            margin-top: 25px;
+        }
+    }
+    .txt{
+        padding: 0 25px;
+        h4{
+            margin: 20px 0;
+            color: var(--White);
+            font-weight: 600;
+            font-size: 25px;
+        }
+        p{
+            margin: 20px 0;
+            color: var(--Soft-blue);
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+    .elements{
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        .eth{
+            color: var(--Cyan);
+            font-weight: 400;
+        }
+        .time{
+            color: var(--Soft-blue);
+            font-weight: 400;
+        }
+        span{
+            margin-left: 5px;
+        }
+        img{
+            vertical-align: middle;
+        }
+    }
+    .line{
+        margin: 25px;
+        height: 1px;
+        width: 300px;
+        background-color: var(--Very-dark-blue-line);
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        margin: 0 25px;
+        color: var(--White);
+        img{
+            height: 35px;
+            border-radius: 100%;
+            border: solid;
+            margin-right: 15px;
+        }
+        span{
+            font-weight: 300;
+            color: var(--Soft-blue);
+            font-size: 16px;
+        }
+        h5{
+            font-weight: 300;
+            font-size: 16px;
+            margin-left: 4px;
+        }
+    }
+}
+
